@@ -14,10 +14,53 @@
     </style>
   </head>
   <body>
-    <frc-dashboard-builder address-type="gitpod">
+    <frc-dashboard-builder address="gitpod">
         <div class="layout">
             <frc-sim-gitpod-info2></frc-sim-gitpod-info2>
-            <frc-absolute-layout dashboard-root></frc-absolute-layout>
+            <frc-absolute-layout dashboard-root>
+            
+<frc-differential-drivebase
+    webbit-id="frc-differential-drivebase"
+    slot=""
+    source-provider="NetworkTables"
+    left-motor-speed="0"
+    right-motor-speed="0"
+    class=""
+    data-x="16.7578125"
+    data-y="79.57421875"
+    style="transform: translate(16.7578px, 79.5742px);"
+    source-key="/liveWindow/ungrouped/differentialDrive1"
+></frc-differential-drivebase>
+<frc-number-slider
+    webbit-id="frc-number-slider #2 #2"
+    slot=""
+    source-provider="NetworkTables"
+    value="0"
+    min="-1"
+    max="1"
+    block-increment="0.05"
+    class=""
+    source-key="/drivebase/turnrate"
+    data-x="0.32421875"
+    data-y="4.0234375"
+    style="transform: translate(0.324219px, 4.02344px);"
+></frc-number-slider>
+<frc-number-slider
+    webbit-id="frc-number-slider #4"
+    slot=""
+    source-provider="NetworkTables"
+    value="0"
+    min="-1"
+    max="1"
+    block-increment="0.05"
+    class=""
+    data-x="482.796875"
+    data-y="6.27734375"
+    style="transform: translate(482.797px, 6.27734px);"
+    source-key="/drivebase/speed"
+></frc-number-slider>
+
+            </frc-absolute-layout>
         </div>
     </frc-dashboard-builder>
     <script src="./node_modules/@frc-web-components/frc-web-components/build/frc-web-components.min.js"></script>
