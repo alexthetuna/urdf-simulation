@@ -15,38 +15,55 @@
   </head>
   <body>
     <frc-dashboard-builder address="gitpod">
-        <div class="layout">
-            <frc-sim-gitpod-info2></frc-sim-gitpod-info2>
-            <frc-absolute-layout dashboard-root>
-            
-<frc-differential-drivebase
-    webbit-id="frc-differential-drivebase"
+        <div class="layout">            <frc-sim-gitpod-info2></frc-sim-gitpod-info2>           <frc-absolute-layout dashboard-root>
+        
+<frc-urdf-viewer
+    urdf="https://rawcdn.githack.com/frc-web-components/frc-web-components/b0fbd5c90d50035012ce04d8dcde041fea7ed79b/models/urdf/pi-bot.urdf"
+    max-distance="0.75"
+    controllable=""
+    camera-x="0.5367507808385713"
+    camera-y="0.27762971422684724"
+    camera-z="0.44420754276295565"
+    webbit-id="frc-urdf-viewer #2 #2"
     slot=""
     source-provider="NetworkTables"
-    left-motor-speed="0"
-    right-motor-speed="0"
-    class=""
-    data-x="16.7578125"
-    data-y="79.57421875"
-    style="transform: translate(16.7578px, 79.5742px);"
-    source-key="/liveWindow/ungrouped/differentialDrive1"
-></frc-differential-drivebase>
-<frc-number-slider
-    webbit-id="frc-number-slider #2 #2"
+    urdf-content=""
+    up="Z+"
+    ambient-color="black"
+    min-distance="0.25"
+    robot-x="0"
+    robot-y="0"
+    robot-z="0"
+    auto-rotate-speed="2"
+></frc-urdf-viewer>
+<frc-urdf-viewer
+    urdf="/robot.urdfalex"
+    max-distance="4"
+    controllable=""
+    camera-x="2.862670831139047"
+    camera-y="1.4806918092098518"
+    camera-z="2.369106894735763"
+    webbit-id="frc-urdf-viewer #4"
     slot=""
     source-provider="NetworkTables"
-    value="0"
-    min="-1"
-    max="1"
-    block-increment="0.05"
-    class=""
-    source-key="/drivebase/turnrate"
-    data-x="0.32421875"
-    data-y="4.0234375"
-    style="transform: translate(0.324219px, 4.02344px);"
-></frc-number-slider>
+    urdf-content=""
+    up="Z+"
+    ambient-color="black"
+    min-distance="4"
+    robot-x="0"
+    robot-y="0"
+    robot-z="0"
+    auto-rotate-speed="2"
+    class="draggable"
+    data-x="32.16015625"
+    data-y="-15.34375"
+    style="transform: translate(32.1602px, -15.3438px);"
+></frc-urdf-viewer>
+
+
+
 <frc-number-slider
-    webbit-id="frc-number-slider #4"
+    webbit-id="frc-number-slider #4 #3"
     slot=""
     source-provider="NetworkTables"
     value="0"
@@ -60,9 +77,9 @@
     source-key="/drivebase/speed"
 ></frc-number-slider>
 
-            </frc-absolute-layout>
-        </div>
-    </frc-dashboard-builder>
+        </frc-absolute-layout>       </div> 
+
+    <frc-dashboard-builder>
     <script src="./node_modules/@frc-web-components/frc-web-components/build/frc-web-components.min.js"></script>
 
     
